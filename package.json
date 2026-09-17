@@ -1,0 +1,7 @@
+{
+  "name":"bookpick",
+  "version":"1.0.0",
+  "private":true,
+  "description":"BookPick reading tracker",
+  "scripts":{"start":"npx serve ."}
+}

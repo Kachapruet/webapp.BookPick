@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>บันทึกการอ่าน - BookPick</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-page="reading">
+
+  <!-- =========================
+       TOPBAR
+  ========================== -->
+  <header class="topbar">
+    <a class="brand" href="dashboard.html">
+      📚 BookPick
+    </a>
+
+    <nav>
+      <a href="dashboard.html">หน้าหลัก</a>
+      <a class="active" href="reading.html">บันทึกการอ่าน</a>
+      <a href="recommendations.html">แนะนำหนังสือ</a>
+
+      <button
+        type="button"
+        data-action="logout"
+        class="link-btn">
+        ออกจากระบบ
+      </button>
+    </nav>
+  </header>
+
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+  <main class="container">
+
+    <div id="app">
+
+      <div class="loading">
+        กำลังโหลด...
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ลำดับสำคัญมาก ห้ามสลับ
+  ====================================================== -->
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Configuration -->
+  <script src="js/config.js"></script>
+
+  <!-- Supabase client -->
+  <script src="js/supabase.js"></script>
+
+  <!-- Utilities -->
+  <script src="js/utils.js"></script>
+
+  <!-- Authentication -->
+  <script src="js/auth.js"></script>
+
+  <!-- Books -->
+  <script src="js/books.js"></script>
+
+  <!-- Reading
+       ต้องโหลดก่อน app.js
+       เพราะ app.js ใช้ window.Reading -->
+  <script src="js/reading.js"></script>
+
+  <!-- Statistics -->
+  <script src="js/statistic.js"></script>
+
+  <!-- Main application
+       ต้องเป็นไฟล์สุดท้าย -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>หน้าหลัก - BookPick</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/components.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/responsive.css"
+  >
+
+</head>
+
+
+<body data-page="dashboard">
+
+
+  <!-- ======================================================
+       TOPBAR
+       ====================================================== -->
+
+  <header class="topbar">
+
+    <a
+      class="brand"
+      href="dashboard.html"
+    >
+      📚 BookPick
+    </a>
+
+
+    <nav>
+
+      <a
+        class="active"
+        href="dashboard.html"
+      >
+        หน้าหลัก
+      </a>
+
+
+      <a
+        href="reading.html"
+      >
+        บันทึกการอ่าน
+      </a>
+
+
+      <a
+        href="recommendations.html"
+      >
+        แนะนำหนังสือ
+      </a>
+
+
+      <button
+        type="button"
+        data-action="logout"
+        class="link-btn"
+      >
+        ออกจากระบบ
+      </button>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- ======================================================
+       MAIN
+       ====================================================== -->
+
+  <main class="container">
+
+    <div id="app">
+
+      <div class="loading">
+        กำลังโหลด...
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+  <!-- ======================================================
+       JAVASCRIPT
+       สำคัญ: ต้องเรียงลำดับนี้
+       ====================================================== -->
+
+  <!-- Supabase -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  </script>
+
+
+  <!-- Configuration -->
+  <script src="js/config.js"></script>
+
+
+  <!-- Supabase Client -->
+  <script src="js/supabase.js"></script>
+
+
+  <!-- Utilities -->
+  <script src="js/utils.js"></script>
+
+
+  <!-- Authentication -->
+  <script src="js/auth.js"></script>
+
+
+  <!-- Books API -->
+  <script src="js/books.js"></script>
+
+
+  <!-- Reading API
+       ต้องอยู่ก่อน dashboard.js -->
+  <script src="js/reading.js"></script>
+
+
+  <!-- Statistics -->
+  <script src="js/statistic.js"></script>
+
+
+  <!-- Dashboard -->
+  <script src="js/dashboard.js"></script>
+
+
+  <!-- Main App -->
+  <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
